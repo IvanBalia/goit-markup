@@ -1,0 +1,40 @@
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+}
+.header-contacts a {
+  display: flex;
+  align-items: center;
+  color: $additional-text-color;
+  &:hover,
+  &:focus {
+    svg {
+      fill: $hover-color;
+    }
+    span {
+      color: $hover-color;
+    }
+  }
+}
+.header-contacts li {
+  display: flex;
+  align-items: center;
+  &:not(:first-child) {
+    margin-left: 50px;
+  }
+}
+.icon-convert,
+.icon-smartphone {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: $additional-text-color;
+}
+.header-contacts span {
+  font-size: 14px;
+  font-weight: 500;
+
+  font-style: normal;
+
+  color: $additional-text-color;
+}
